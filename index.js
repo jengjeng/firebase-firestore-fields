@@ -22,7 +22,7 @@ function parseValue(value) {
         case 'doubleValue':
             return Number(value[type]);
         case 'timestampValue':
-            return new Date(value[type])
+            return new Date(value);
         default:
             return value[type];
     }
