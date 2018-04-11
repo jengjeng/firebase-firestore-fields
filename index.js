@@ -21,6 +21,8 @@ function parseValue(value) {
         case 'integerValue':
         case 'doubleValue':
             return Number(value[type]);
+        case 'timestampValue':
+            return new Date(value[type])
         default:
             return value[type];
     }
